@@ -49,3 +49,15 @@ student_1["course"] = 3
 student_1["age"] = 20
 
 print(f"Student {student_1['name'].title()} {student_1['course']} course")
+
+phones = {
+    "djohn": "iPhone XS max",
+    "james": "GalaxyS9",
+    "will": "xiaomi 11pro",
+    "ben": "nokia 3310",
+    "efe": "pixel 3x1"
+}
+phone = phones.get("djohn", "Bunday ism mavjud emas")
+print(phone)
+fruit = en_uz.get("banana", "There isn't that fruit!")
+print(fruit)
