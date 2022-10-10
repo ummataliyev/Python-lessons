@@ -61,3 +61,35 @@ phone = phones.get("djohn", "Bunday ism mavjud emas")
 print(phone)
 fruit = en_uz.get("banana", "There isn't that fruit!")
 print(fruit)
+
+father = {
+    "name": "Bakhromjon",
+    "surname": "Yakubov",
+    "birth": 1977
+}
+name = father["name"].title()
+surname = father["surname"].title()
+birth = father["birth"]
+
+print(f"My father's {name} {surname}. He was born in {birth} in Andijan")
+
+meals = {
+    "father": "palov",
+    "mother": "norin",
+    "sister": "manti"
+}
+meal = meals["father"]
+print(f"My father likes {meal}")
+
+dictionary = {
+    "integer": "son",
+    "string": "matn",
+    "float": "10 lik son",
+    "title()": "bosh harf"
+}
+
+smth = str(input("What do you want to ask?"))
+if smth.lower() in dictionary:
+    print(f"Translation of this {dictionary.get(smth)}")
+else:
+    print("Sorry, error 404 not found")

@@ -44,6 +44,7 @@ print("Write your five favourite film?:")
 for n in range(5):
     films.append(input(f" {n+1} - write your next film:"))
     print(films)
+
 n_people = int(input("How many people do you meet today? :"))
 names = []
 for name in range(n_people):
