@@ -93,3 +93,63 @@ if smth.lower() in dictionary:
     print(f"Translation of this {dictionary.get(smth)}")
 else:
     print("Sorry, error 404 not found")
+
+dictionary = {
+    "apple": "olma",
+    "banana": "banan",
+    "heart": "yurak",
+    "car": "moshina",
+    "phone": "telefon",
+    "pen": "ruchka",
+    "pencil": "qalam",
+    "fan": "ventilyator",
+    "air condition": "konditsioner",
+    "box": "quti"
+}
+
+for word, translation in dictionary.items():
+    print(f"Key: {word.title()}")
+    print(f"Value: {translation}")
+
+counrties = {
+    "Uzbekistan": "Tashkent",
+    "America": "Washignton",
+    "Russia Federation": "Moscow",
+    "China": "Pekin",
+    "Germany": "Berlin",
+    "France": "Paris"
+}
+print("World countries:")
+for country in sorted(counrties):
+    print(country.upper())
+
+print("Captilas of countries:")
+for capital in sorted(counrties.values()):
+    print(capital.title())
+
+country = str(input("What country would you like to know the capital of?"))
+country = country.title()
+capital = counrties.get(country)
+if capital is None:
+    print("Sorry, we don't have any information about it!")
+else:
+    print(f"The capital of {country.upper()} is the {capital.title()}.")
+
+menu = {
+    "osh": 15000,
+    "norin": 25000,
+    "qazi": 6000,
+    "grill": 35000,
+    "somsa": 5000,
+}
+
+print("Please, order three dishes:")
+orders = []
+for n in range(3):
+    orders.append(input(f"{n+1}-meal:").lower())
+
+for order in orders:
+    if order in menu:
+        print(f"{order.title()} is {menu[order]} soum.")
+    else:
+        print(f"Sorry, we don't have a {order}.")
