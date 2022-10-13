@@ -22,4 +22,3 @@ print("You are ", int(age), )
 a = int("10")
 b = float("10")
 temp = str(36.6)
-# homework
