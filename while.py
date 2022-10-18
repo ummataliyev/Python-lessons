@@ -7,6 +7,7 @@ height = float(height)
 print(f"Your height is {height}.")
 
 number = 1
+
 while number <= 5:
     print(number, end=' ')
     number = number + 1
