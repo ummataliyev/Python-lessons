@@ -1,6 +1,5 @@
 import random
 
-
 def find_number(x=10):
     random_number = random.randint(1, x)
     print(f"I thought of a number from 1 to {x}. Can you find it?", end="")
@@ -32,7 +31,7 @@ def find_number_pc(x=10):
         else:
             assumoption = low
         answer = input(
-            f"You guessed the number {assumoption}: true (T),"
+            f"I geussed number {assumoption}: true (T),"
             f"Press (+) if the number I think is bigger than that, or (-) if lower".lower()
         )
         if answer == "-":
@@ -57,7 +56,10 @@ def play(x=10):
             print(f"You found with {assumptions_user} guesses. You won!")
         else:
             print("Draw!")
-        yana = int(input("Will we play again? YES(1)/NO(0):"))
+        again = int(input("Will we play again? YES(1)/NO(0):"))
+        if again == 0:
+            break
+    print("Thank you for the game!")
 
 
 play()
