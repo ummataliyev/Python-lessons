@@ -1,3 +1,4 @@
 .vscode/
 __pycache__/
 main.py
+uzword.py
