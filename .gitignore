@@ -1,5 +1,4 @@
 .vscode/
 __pycache__/
 main.py
-uzwords.py
 example.py
