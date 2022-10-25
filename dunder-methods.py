@@ -78,8 +78,6 @@ car3 = CarDealership("Mercedes", "G-class", "White", 2021, 100000)
 
 dealership1.add_car(car1, car2, car3)
 
-# Homework
-
 class Student:
     """Class of student"""
     def __init__(self, name, surname, passport, birth_y, idnum, adress):
