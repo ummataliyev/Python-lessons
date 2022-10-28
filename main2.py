@@ -13,7 +13,6 @@ for i in range(14, 140, 14):
    myDate = myDate + dt.timedelta(days=i)
    print(myDate)
 
-
 birth = dt.date(2022, 10, 3)
 today = dt.date.today()
 difference = today - birth
